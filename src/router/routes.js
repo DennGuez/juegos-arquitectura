@@ -9,7 +9,17 @@ const routes = [
         path: "juegoscurso",
         component: () => import("pages/JuegosCursoPage.vue"),
       },
-      { path: "hospedaje", component: () => import("pages/HospedajePage.vue") },
+      { 
+        path: "hospedaje", component: () => import("pages/hospedajes/HospedajePage.vue"),
+
+      },
+      {
+        path: "hoteles", component: () => import("pages/hospedajes/HotelesPage.vue")
+      }
+      ,
+      {
+        path: "eden", component: () => import("pages/hospedajes/HotelEden.vue")
+      },
     ],
   },
 
