@@ -10,10 +10,6 @@ const routes = [
         component: () => import("pages/JuegosCursoPage.vue"),
       },
       {
-        path: "hospedaje",
-        component: () => import("pages/HospedajePage.vue"),
-      },
-      {
         path: "/ganadores",
         name: "ganadores",
         component: () => import("layouts/GanadoresLayout.vue"),
@@ -26,6 +22,62 @@ const routes = [
             path: "ganador",
             name: "ganador",
             component: () => import("pages/ganadores/GanadorPage.vue"),
+          },
+        ],
+      },
+      {
+        path: "/hospedajes",
+        name: "hospedajes",
+        component: () => import("layouts/HospedajesLayout.vue"),
+        // redirect: "hospedajes-index",
+        children: [
+          {
+            path: "",
+            // name: "hospedajes-index",
+            component: () => import("pages/hospedajes/hospedajesPage.vue"),
+          },
+          {
+            path: "hoteles",
+            name: "hoteles",
+            component: () => import("pages/hospedajes/hotelesPage.vue"),
+          },
+          {
+            path: "eden",
+            name: "eden",
+            component: () => import("pages/hospedajes/edenPage.vue"),
+          },
+          {
+            path: "edenubi",
+            name: "edenubi",
+            component: () => import("pages/hospedajes/edenUbiPage.vue"),
+          },
+        ],
+      },
+      {
+        path: "/comidas",
+        name: "comidas",
+        component: () => import("layouts/comidasLayout.vue"),
+        // redirect: "hospedajes-index",
+        children: [
+          {
+            path: "",
+            // name: "comidas",
+            component: () => import("pages/comidas/comidasPage.vue"),
+          },
+          {
+            path: "restaurantes",
+            name: "restaurantes",
+            component: () => import("pages/comidas/restaurantesPage.vue"),
+          },
+          {
+            path: "nayjama",
+            name: "nayjama",
+            component: () => import("pages/comidas/nayjamaPage.vue"),
+          },
+          {
+            path: "nayjamaubi",
+            name: "nayjamaubi",
+            component: () => import("pages/comidas/nayjamaUbiPage.vue"),
           },
         ],
       },

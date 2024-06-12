@@ -50,7 +50,7 @@
       >
         <router-link
           exact
-          to="/hospedaje"
+          to="/hospedajes"
           class="absolute full-width full-height"
         ></router-link>
       </q-btn>
@@ -62,7 +62,13 @@
         color="yellow-8"
         icon="restaurant_menu"
         label="Comida"
-      />
+      >
+        <router-link
+            exact
+            to="/comidas"
+            class="absolute full-width full-height"
+        ></router-link>
+      </q-btn>
       <q-btn
         unelevated
         class="full-width q-mb-sm"
