@@ -4,7 +4,11 @@
             <h4 class="q-ma-none">Juegos en Curso</h4>
         </div>
         <div class="custom-bordered q-ma-md text-white row justify-center">
-            <h5>Oruro vs. Cochabamba</h5>
+            <h5>        <router-link
+          exact
+          to="/hospedaje"
+          class="absolute full-width full-height"
+        >Oruro vs. Cochabamba</router-link></h5>
             <div>Futsal Varones</div>
             <div>Inicio: 20:00 Hrs.</div>
         </div>
