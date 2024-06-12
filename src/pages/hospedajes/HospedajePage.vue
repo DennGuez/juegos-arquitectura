@@ -7,7 +7,7 @@
       </div>
       <div class="buttons-container">
         <q-btn unelevated class="full-width q-mb-sm q-py-lg button" text-color="white" color="dark-blue" label="HOTELES" >
-            <!-- <router-link exact :to="{name: hospedaje-hoteles}" class="absolute full-width full-height"></router-link> -->
+            <router-link exact to="/hoteles" class="absolute full-width full-height"></router-link>
         </q-btn>
         <q-btn unelevated class="full-width q-mb-sm q-py-lg button" text-color="white" color="dark-blue" label="RESIDENCIALES" />
         <q-btn unelevated class="full-width q-mb-sm q-py-lg button" text-color="white" color="dark-blue" label="ALOJAMIENTOS" />

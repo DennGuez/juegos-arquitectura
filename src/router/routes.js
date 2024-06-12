@@ -20,6 +20,9 @@ const routes = [
       {
         path: "eden", component: () => import("pages/hospedajes/HotelEden.vue")
       },
+      {
+        path: "edenubi", component: () => import("pages/hospedajes/edenUbi.vue")
+      },
     ],
   },
 

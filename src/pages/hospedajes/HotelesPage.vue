@@ -5,13 +5,14 @@
         <q-btn unelevated class="full-width q-mb-sm  q-py-lg button" text-color="white" color="dark-blue" label="HOTEL EDEN">
           <template v-slot:label>
             <div class="button-content">
-              <span class="text-weight-bolder"> OTEL EDEN</span>
+              <span class="text-weight-bolder"> HOTEL EDEN</span>
               <div class="stars">
                 <q-icon name="star" v-for="star in 4" :key="star" />
                 <q-icon name="star_border" />
               </div>
             </div>
           </template>
+          <router-link exact to="/eden" class="absolute full-width full-height"></router-link>
         </q-btn>
         <q-btn unelevated class="full-width q-mb-sm  q-py-lg button" text-color="white" color="dark-blue" label="HOTEL VIRGEN DEL SOCAVON">
           <template v-slot:label>

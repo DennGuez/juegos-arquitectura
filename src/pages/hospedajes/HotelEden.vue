@@ -1,6 +1,7 @@
 <template>
   <q-page>
     <div class="bg-container">
+    <!-- <img src="https://i.postimg.cc/sXp3GTSM/temp-Imageed7j-T4.avif" alt="Portada" class="header-image" /> -->
       <div class="hotel-header">
         <h1 class="hotel-name">HOTEL EDEN</h1>
         <div class="stars">
@@ -20,7 +21,9 @@
         <p>Este hotel cuenta con gimnasio, sauna seco y vapor... Precios... Contactos...</p>
       </div>
       <div class="buttons-container">
-        <q-btn unelevated class="full-width button" text-color="white" color="dark-blue" label="UBICACIÓN" />
+        <q-btn unelevated class="full-width button" text-color="white" color="dark-blue" label="UBICACIÓN">
+            <router-link exact to="/edenubi" class="absolute full-width full-height"></router-link>
+        </q-btn>
       </div>
       <div class="footer">
         <q-btn rounded class="q-pa-md footer-button" color="pink-4" icon="person" />
