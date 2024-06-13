@@ -122,13 +122,8 @@
         color="yellow-8"
         icon="emoji_events"
         label="Convocatoria"
+        @click="openConvocatoria"
       >
-      <q-item
-        clickable
-        dense
-        target="_blank"
-        href="https://drive.google.com/drive/folders/1-0AFWlvJcw688ZWto3YMh-Ngp6ByPekI"
-      />
     </q-btn>
     <q-btn 
         rounded class="q-pa-md footer-button" 
@@ -176,6 +171,11 @@ function updateDuration(duration) {
   hours.value = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   minutes.value = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
   seconds.value = Math.floor((duration % (1000 * 60)) / 1000);
+}
+
+function openConvocatoria() {
+  const url = 'https://drive.google.com/drive/folders/1-0AFWlvJcw688ZWto3YMh-Ngp6ByPekI';
+  window.open(url, '_blank');
 }
 
 </script>

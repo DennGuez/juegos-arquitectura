@@ -5,7 +5,7 @@
             style="background-size: contain; overflow: visible;"
         >
         <div class="row justify-center text-white" style="position: unset; background: none; margin-top: 130px;">
-            <h4 class="no-margin telemarines text-weight-bolder">{{ currentTitle }}</h4>
+            <h4 class="no-margin telemarines text-weight-bolder">Lugares Turisticos</h4>
         </div>
         <RouterView />
         <!-- <div class="row justify-end q-px-sm">

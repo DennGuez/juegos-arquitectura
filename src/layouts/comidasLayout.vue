@@ -20,33 +20,33 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
-
-const router = useRouter();
-
-function goHome() {
-  router.push('/');
-}
+  import { useRouter } from 'vue-router';
+  
+  const router = useRouter();
+  
+  function goHome() {
+    router.push('/');
+  }
 </script>
 
 <style scoped>
-.page-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem 0;
-  background-color: #13082A; /* Ajusta este color según sea necesario */
-}
-
-.footer-button {
-  background-color: #13082A; /* Ajusta este color según sea necesario */
-}
+    .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+    
+    .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    background-color: #13082A; /* Ajusta este color según sea necesario */
+    }
+    
+    .footer-button {
+    background-color: #13082A; /* Ajusta este color según sea necesario */
+    }
 </style>
