@@ -81,6 +81,34 @@ const routes = [
           },
         ],
       },
+      {
+        path: "/contactos",
+        name: "contactos",
+        component: () => import("layouts/contactosLayout.vue"),
+        // redirect: "hospedajes-index",
+        children: [
+          {
+            path: "",
+            // name: "comidas",
+            component: () => import("pages/contactos/contactosPage.vue"),
+          },
+          {
+            path: "responsable",
+            name: "responsable",
+            component: () => import("pages/contactos/responsablePage.vue"),
+          },
+          // {
+          //   path: "nayjama",
+          //   name: "nayjama",
+          //   component: () => import("pages/comidas/nayjamaPage.vue"),
+          // },
+          // {
+          //   path: "nayjamaubi",
+          //   name: "nayjamaubi",
+          //   component: () => import("pages/comidas/nayjamaUbiPage.vue"),
+          // },
+        ],
+      },
     ],
   },
   { path: "/login", component: () => import("pages/LoginPage.vue") },

@@ -2,7 +2,7 @@
     <div class="q-ma-md text-white column items-center" style="position: unset; background: none;">
         <h5 class="q-px-md q-my-xs text-weight-bolder telemarines">RESTAURANT NAYJAMA</h5>
     </div>
-    <div class="full-width column items-center"> 
+    <div class="full-width column items-center" style="position: unset; background: none;"> 
         <div class="full-width q-px-md">
             <q-img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-iVfSFCuSpcb7D1sPGlAH2RHmyCqEHmijEQ&s"

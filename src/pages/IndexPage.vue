@@ -118,6 +118,17 @@
         href="https://drive.google.com/drive/folders/1-0AFWlvJcw688ZWto3YMh-Ngp6ByPekI"
       />
     </q-btn>
+    <q-btn 
+        rounded class="q-pa-md footer-button" 
+        color="pink-4" 
+        icon="person"
+    >
+        <router-link
+            exact
+            to="/contactos"
+            class="absolute full-width full-height"
+        ></router-link>
+    </q-btn>
     </div>
     </q-img>
   </q-page>

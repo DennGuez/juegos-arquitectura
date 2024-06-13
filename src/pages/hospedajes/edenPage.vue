@@ -1,12 +1,12 @@
 <template>
-    <div class="custom-bordered q-ma-md text-white column items-center" style="position: unset;">
+    <div class="q-ma-md text-white column items-center" style="position: unset; background: none;">
             <h5 class="q-px-md q-my-xs text-weight-bolder">HOTEL EDEN</h5>
         <div class="stars">
         <q-icon class="text-h5" name="star" v-for="star in 4" :key="star" />
         <q-icon class="text-h5" name="star_border" v-for="star in 1" :key="'border' + star" />
         </div>
     </div>
-    <div class="full-width column items-center"> 
+    <div class="full-width column items-center" style="position: unset; background: none;"> 
         <div class="full-width q-px-md">
             <q-img
                     src="https://pix8.agoda.net/hotelImages/430440/0/4041ff5dbd5437a8286058f8875bbb5b.jpeg"

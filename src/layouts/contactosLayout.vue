@@ -6,7 +6,7 @@
             style="background-size: contain; overflow: visible;"
         >
         <div class="row justify-center text-white" style="position: unset; background: none; margin-top: 130px;">
-            <h4 class="no-margin telemarines text-weight-bolder">gastronomia</h4>
+            <h4 class="no-margin telemarines text-weight-bolder">contactos</h4>
         </div>
         <RouterView />
         </q-img>

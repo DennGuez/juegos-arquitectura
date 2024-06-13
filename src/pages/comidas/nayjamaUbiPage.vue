@@ -2,17 +2,17 @@
     <div class="custom-bordered q-ma-md text-white column items-center" style="position: unset;">
             <h5 class="q-px-md q-my-xs text-weight-bolder">RESTAURANTE NAYJAMA</h5>
     </div>
-    <div class="hotel-map">
-    <iframe
-       width="100%"
-       height="300"
-       :src="mapUrl"
-       frameborder="0"
-       style="border:0; max-width: 6000px;"
-       allowfullscreen=""
-       aria-hidden="false"
-       tabindex="0">
-     </iframe>
+    <div class="hotel-map" style="position: unset; background: none;">
+        <iframe
+        width="100%"
+        height="350"
+        :src="mapUrl"
+        frameborder="0"
+        style="border:0; max-width: 6000px;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0">
+        </iframe>
     </div>
 </template>
 
