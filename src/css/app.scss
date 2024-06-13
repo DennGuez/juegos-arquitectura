@@ -1,4 +1,12 @@
 // app global css in SCSS form
+@font-face {
+  font-family: customfont;
+  src: url(src/css/telemarines.ttf);
+}
+// declare a class which applies it
+.telemarines {
+  font-family: "customfont";
+}
 .custom-header {
   height: 200px;
 }
