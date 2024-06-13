@@ -1,5 +1,5 @@
 <template>
-    <div class="full-width column items-center"> 
+    <div class="full-width column items-center no-padding"> 
         <div class="full-width column items-center" style="position: relative;">
             <h4 class="no-margin text-weight-medium telemarines">FUTSAL</h4>
             <h6 class="no-margin text-weight-medium">Jueves 11/12/24</h6>

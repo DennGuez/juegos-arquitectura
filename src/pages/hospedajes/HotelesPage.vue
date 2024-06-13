@@ -11,7 +11,7 @@
     </div>
 
     <div class="custom-bordered q-ma-md text-white column items-center" style="position: unset;">
-        <h5 class="q-px-md q-my-xs text-weight-bolder">HOTEL VIRGEN DEL SOCAVON</h5>
+        <h5 class="q-px-md q-my-xs text-weight-bolder text-center">HOTEL VIRGEN DEL SOCAVON</h5>
         <div class="stars">
         <q-icon class="text-h5" name="star" v-for="star in 3" :key="star" />
         <q-icon class="text-h5" name="star_border" v-for="star in 2" :key="'border' + star" />

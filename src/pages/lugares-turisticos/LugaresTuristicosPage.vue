@@ -1,7 +1,7 @@
 <template>
     <div class="custom-bordered q-ma-md text-white column items-center" style="position: unset;">
         <RouterLink :to="{ name: 'lugar-turistico' }" class="column items-center" style="text-decoration: none; color: inherit;">
-            <h5 class="q-px-md q-my-xs text-weight-bolder">MONUMENTOS A LA VIRGEN DEL SOCAVON</h5>
+            <h5 class="q-px-md q-my-xs text-weight-bolder text-center">MONUMENTOS A LA VIRGEN DEL SOCAVON</h5>
         </RouterLink>
     </div>
     <div class="custom-bordered q-ma-md text-white column items-center" style="position: unset;">

@@ -8,32 +8,38 @@
             <h4 class="no-margin telemarines text-weight-bolder">{{ currentTitle }}</h4>
         </div>
         <RouterView />
-        <!-- <div class="row justify-end q-px-sm">
-            <q-btn rounded class="q-pa-md" color="pink-4" icon="arrow_back_ios" @click="$router.go(-1)" />
-        </div> -->
         </q-img>
+        <div class="footer row full-width justify-between" style="background: none;">
+            <q-btn rounded class="q-pa-md footer-button" color="pink-4" icon="person" />
+            <q-btn rounded class="q-pa-md footer-button" color="pink-4" icon="home" @click="goHome" />
+            <q-btn rounded class="q-pa-md footer-button" color="pink-4" icon="arrow_back_ios" @click="$router.go(-1)" />
+        </div>
     </q-page>
 </template>
 
 <script setup>
-import { ref, watch } from 'vue';
-import { useRoute } from 'vue-router';
-defineOptions({
-    name: 'GanadoresLayout'
-});
+import { useRouter } from 'vue-router';
 
-const route = useRoute();
-const currentTitle = ref('')
+const router = useRouter();
 
-const changeTittle = () => {
-    currentTitle.value = route.name
+function goHome() {
+    router.push('/');
+}
+</script>
+<style scoped>
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    background-color: #13082A;
+    /* Ajusta este color según sea necesario */
 }
 
-watch(
-    () => route.name,
-    () => changeTittle(),
-    { immediate: true }
-)
-
-</script>
-<style></style>
+.footer-button {
+    background-color: #13082A;
+    /* Ajusta este color según sea necesario */
+}
+</style>

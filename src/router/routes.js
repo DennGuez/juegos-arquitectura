@@ -117,7 +117,7 @@ const routes = [
           {
             path: "hoteles",
             name: "hoteles",
-            component: () => import("pages/hospedajes/hotelesPage.vue"),
+            component: () => import("pages/hospedajes/HotelesPage.vue"),
           },
           {
             path: "eden",
