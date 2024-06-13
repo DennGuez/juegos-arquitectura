@@ -35,7 +35,7 @@
       >
         <router-link
           exact
-          to="/juegoscurso"
+          :to="{ name: 'juegos-curso' }"
           class="absolute full-width full-height"
         ></router-link>
       </q-btn>
@@ -77,7 +77,13 @@
         color="yellow-8"
         icon="location_on"
         label="Lugares Turisticos"
-      />
+      >
+      <router-link
+          exact
+          :to="{ name: 'lugares-turisticos' }"
+          class="absolute full-width full-height"
+      ></router-link>
+      </q-btn>
       <q-btn
         unelevated
         class="full-width q-mb-sm"
@@ -86,7 +92,13 @@
         color="yellow-8"
         icon="nightlife"
         label="Eventos Especiales"
-      />
+      >
+      <router-link
+          exact
+          :to="{ name: 'eventos-especiales' }"
+          class="absolute full-width full-height"
+        ></router-link>
+      </q-btn>
       <q-btn
         unelevated
         class="full-width q-mb-sm"

@@ -1,5 +1,4 @@
 <template>
-
     <div class="custom-bordered q-ma-md text-white" style="position: unset;">
         <RouterLink :to="{ name: 'ganador' }" class="column items-center" style="text-decoration: none; color: inherit;">
             <h5 class="q-px-md q-my-xs text-weight-bolder">FUTBOL VARONES</h5>

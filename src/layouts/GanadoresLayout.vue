@@ -5,7 +5,7 @@
             style="background-size: contain; overflow: visible;"
         >
         <div class="row justify-center text-white" style="position: unset; background: none; margin-top: 130px;">
-            <h4 class="no-margin telemarines text-weight-bolder">Ganadores</h4>
+            <h4 class="no-margin telemarines text-weight-bolder">{{ currentTitle }}</h4>
         </div>
         <RouterView />
         <!-- <div class="row justify-end q-px-sm">
@@ -16,8 +16,24 @@
 </template>
 
 <script setup>
+import { ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 defineOptions({
     name: 'GanadoresLayout'
 });
+
+const route = useRoute();
+const currentTitle = ref('')
+
+const changeTittle = () => {
+    currentTitle.value = route.name
+}
+
+watch(
+    () => route.name,
+    () => changeTittle(),
+    { immediate: true }
+)
+
 </script>
 <style></style>
