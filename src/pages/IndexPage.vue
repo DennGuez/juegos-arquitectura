@@ -20,7 +20,7 @@
       >
         <router-link
           exact
-          to="/fixture"
+          :to="{ name: 'fixture-menu' }"
           class="absolute full-width full-height"
         ></router-link>
       </q-btn>
