@@ -12,7 +12,7 @@
             <div class="q-pa-md">
                     Nayjama es un restaurante con mucha tradición en la ciudad, nació como un pequeño lugar de comida típica y con los años se ha convertido en un bonito y acogedor
             </div>
-            <div class="custom-bordered q-ma-md text-white column items-center" style="position: unset;">
+            <div class="q-ma-md text-white column items-center" style="position: unset;">
                 <RouterLink :to="{ name: 'nayjamaubi' }" class="column items-center" style="text-decoration: none; color: inherit;">
                     <h5 class="q-px-md q-my-xs text-weight-bolder">Ubicacion</h5>
                 </RouterLink>

@@ -13,8 +13,12 @@
         </div>
         <div class="custom-bordered q-ma-md text-white column items-center" style="position: unset;">
             <div class="full-width q-px-md">
-                <RouterLink :to="{ name: 'edenubi' }" class="column items-center" style="text-decoration: none; color: inherit;">
-                    <q-btn rounded class="q-pa-md footer-button" color="green-4" icon="message" @click="openWhatsApp" />
+                <q-img  
+                    rounded class="q-pa-md footer-button" color="green-4" icon="message" @click="openWhatsApp"
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
+                        style="background-size: contain; overflow: visible;"
+                />
+                <RouterLink class="column items-center " style="text-decoration: none; color: inherit;">
                     <h5 class="q-px-md q-my-xs text-weight-bolder">WhatsApp</h5>
                 </RouterLink>
             </div>

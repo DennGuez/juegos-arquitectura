@@ -1,153 +1,159 @@
 <template>
-  <q-page style="background-color: #13082a;">
+  <q-page style="background-color: #13082a">
     <q-img
-        src="src/img/portada-completa.jpg"
-        style="background-size: contain; overflow: visible;"
+      src="src/img/portada-completa.jpg"
+      style="background-size: contain; overflow: visible"
     >
-      <div class="text-white row justify-center q-pa-none" style="margin-top: 270px; background: none ;">
+      <div
+        class="text-white row justify-center q-pa-none"
+        style="margin-top: 270px; background: none"
+      >
         <p class="q-ma-none">DIAS / HORAS / MINUTOS / SEGUNDOS</p>
-        <h4 class="q-ma-none">{{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }}</h4>
+        <h4 class="q-ma-none">
+          {{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }}
+        </h4>
       </div>
-      <div class="q-px-sm" style="margin-top: 370px; background: none ;">
-      <q-btn
-        unelevated
-        class="full-width q-mb-sm"
-        align="left"
-        text-color="black"
-        color="yellow-8"
-        icon="event"
-        label="Fixture y Resultados"
-      >
-        <router-link
-          exact
-          :to="{ name: 'fixture-menu' }"
-          class="absolute full-width full-height"
-        ></router-link>
-      </q-btn>
-      <q-btn
-        unelevated
-        class="full-width q-mb-sm"
-        align="left"
-        text-color="black"
-        color="yellow-8"
-        icon="sports_handball"
-        label="Juegos en curso"
-      >
-        <router-link
-          exact
-          :to="{ name: 'juegos-curso' }"
-          class="absolute full-width full-height"
-        ></router-link>
-      </q-btn>
-      <q-btn
-        unelevated
-        class="full-width q-mb-sm"
-        align="left"
-        text-color="black"
-        color="yellow-8"
-        icon="hotel"
-        label="Hospedaje"
-      >
-        <router-link
-          exact
-          to="/hospedajes"
-          class="absolute full-width full-height"
-        ></router-link>
-      </q-btn>
-      <q-btn
-        unelevated
-        class="full-width q-mb-sm"
-        align="left"
-        text-color="black"
-        color="yellow-8"
-        icon="restaurant_menu"
-        label="Comida"
-      >
-        <router-link
+      <div class="q-px-sm" style="margin-top: 370px; background: none">
+        <q-btn
+          unelevated
+          class="full-width q-mb-sm"
+          align="left"
+          text-color="black"
+          color="yellow-8"
+          icon="picture_as_pdf"
+          label="Convocatoria"
+          @click="openConvocatoria"
+        >
+        </q-btn>
+        <q-btn
+          unelevated
+          class="full-width q-mb-sm"
+          align="left"
+          text-color="black"
+          color="yellow-8"
+          icon="event"
+          label="Fixture y Resultados"
+        >
+          <router-link
+            exact
+            :to="{ name: 'fixture-menu' }"
+            class="absolute full-width full-height"
+          ></router-link>
+        </q-btn>
+        <q-btn
+          unelevated
+          class="full-width q-mb-sm"
+          align="left"
+          text-color="black"
+          color="yellow-8"
+          icon="sports_handball"
+          label="Juegos en curso"
+        >
+          <router-link
+            exact
+            :to="{ name: 'juegos-curso' }"
+            class="absolute full-width full-height"
+          ></router-link>
+        </q-btn>
+        <q-btn
+          unelevated
+          class="full-width q-mb-sm"
+          align="left"
+          text-color="black"
+          color="yellow-8"
+          icon="hotel"
+          label="Hospedaje"
+        >
+          <router-link
+            exact
+            to="/hospedajes"
+            class="absolute full-width full-height"
+          ></router-link>
+        </q-btn>
+        <q-btn
+          unelevated
+          class="full-width q-mb-sm"
+          align="left"
+          text-color="black"
+          color="yellow-8"
+          icon="restaurant_menu"
+          label="Comida"
+        >
+          <router-link
             exact
             to="/comidas"
             class="absolute full-width full-height"
-        ></router-link>
-      </q-btn>
-      <q-btn
-        unelevated
-        class="full-width q-mb-sm"
-        align="left"
-        text-color="black"
-        color="yellow-8"
-        icon="location_on"
-        label="Lugares Turisticos"
-      >
-      <router-link
-          exact
-          :to="{ name: 'lugares-turisticos' }"
-          class="absolute full-width full-height"
-      ></router-link>
-      </q-btn>
-      <q-btn
-        unelevated
-        class="full-width q-mb-sm"
-        align="left"
-        text-color="black"
-        color="yellow-8"
-        icon="nightlife"
-        label="Eventos Especiales"
-      >
-      <router-link
-          exact
-          :to="{ name: 'eventos-especiales' }"
-          class="absolute full-width full-height"
-        ></router-link>
-      </q-btn>
-      <q-btn
-        unelevated
-        class="full-width q-mb-sm"
-        align="left"
-        text-color="black"
-        color="yellow-8"
-        icon="emoji_events"
-        label="Ganadores"
-      >
-      <router-link
-          exact
-          to="/ganadores"
-          class="absolute full-width full-height"
-      ></router-link>
-      </q-btn>
-      <q-btn
-        unelevated
-        class="full-width q-mb-sm"
-        align="left"
-        text-color="black"
-        color="yellow-8"
-        icon="emoji_events"
-        label="Convocatoria"
-        @click="openConvocatoria"
-      >
-    </q-btn>
-    <q-btn 
-        rounded class="q-pa-md footer-button" 
-        color="pink-4" 
-        icon="person"
-    >
-        <router-link
+          ></router-link>
+        </q-btn>
+        <q-btn
+          unelevated
+          class="full-width q-mb-sm"
+          align="left"
+          text-color="black"
+          color="yellow-8"
+          icon="location_on"
+          label="Lugares Turisticos"
+        >
+          <router-link
+            exact
+            :to="{ name: 'lugares-turisticos' }"
+            class="absolute full-width full-height"
+          ></router-link>
+        </q-btn>
+        <q-btn
+          unelevated
+          class="full-width q-mb-sm"
+          align="left"
+          text-color="black"
+          color="yellow-8"
+          icon="nightlife"
+          label="Eventos Especiales"
+        >
+          <router-link
+            exact
+            :to="{ name: 'eventos-especiales' }"
+            class="absolute full-width full-height"
+          ></router-link>
+        </q-btn>
+        <q-btn
+          unelevated
+          class="full-width q-mb-sm"
+          align="left"
+          text-color="black"
+          color="yellow-8"
+          icon="emoji_events"
+          label="Ganadores"
+        >
+          <router-link
+            exact
+            to="/ganadores"
+            class="absolute full-width full-height"
+          ></router-link>
+        </q-btn>
+        <q-btn
+          rounded
+          class="q-pa-md footer-button"
+          color="pink-4"
+          icon="person"
+        >
+          <router-link
             exact
             to="/contactos"
             class="absolute full-width full-height"
-        ></router-link>
-    </q-btn>
-    </div>
+          ></router-link>
+        </q-btn>
+      </div>
     </q-img>
   </q-page>
 </template>
 
 <script setup>
-import { ref } from "vue"
+import { ref } from "vue";
 defineOptions({
   name: "IndexPage",
 });
 
-const countDownDate = new Date("Nov 10, 2024 00:00:00").getTime();
+const countDownDate = new Date("Nov 06, 2024 00:00:00").getTime();
 const days = ref("days");
 const hours = ref("hours");
 const minutes = ref("minutes");
@@ -168,14 +174,16 @@ const interval = setInterval(() => {
 
 function updateDuration(duration) {
   days.value = Math.floor(duration / (1000 * 60 * 60 * 24));
-  hours.value = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  hours.value = Math.floor(
+    (duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
   minutes.value = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
   seconds.value = Math.floor((duration % (1000 * 60)) / 1000);
 }
 
 function openConvocatoria() {
-  const url = 'https://drive.google.com/drive/folders/1-0AFWlvJcw688ZWto3YMh-Ngp6ByPekI';
-  window.open(url, '_blank');
+  const url =
+    "https://drive.google.com/drive/folders/1-0AFWlvJcw688ZWto3YMh-Ngp6ByPekI";
+  window.open(url, "_blank");
 }
-
 </script>

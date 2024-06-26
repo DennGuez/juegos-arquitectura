@@ -1,7 +1,7 @@
 <template>
     <div class="full-width column items-center"> 
         <div class="full-width column items-center" style="position: relative;">
-            <h6 class="no-margin text-weight-medium telemarines">Primer convite</h6>
+            <h6 class="no-margin text-weight-medium telemarines">Monumento a la Virgen</h6>
         </div>
         <div class="full-width q-px-md">
             <q-img
@@ -11,7 +11,7 @@
         </div>
         <div class="q-pa-md">
             Monumento a La Virgen del Socavón…
-            Acceso en teleférico lo días….
+            Acceso en teleférico los días miercoles.
         </div>
         <div class="custom-bordered q-ma-md text-white column items-center" style="position: unset;">
             <RouterLink :to="{ name: 'lugar-turistico-ubicacion' }" class="column items-center" style="text-decoration: none; color: inherit;">

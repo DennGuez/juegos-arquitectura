@@ -1,5 +1,5 @@
 <template>
-    <div class="custom-bordered q-ma-md text-white column items-center" style="position: unset;">
+    <div class="q-ma-md text-white column items-center" style="position: unset;  background: none;">
             <h5 class="q-px-md q-my-xs text-weight-bolder">RESTAURANTE NAYJAMA</h5>
     </div>
     <div class="hotel-map" style="position: unset; background: none;">
